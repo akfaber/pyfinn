@@ -13,7 +13,6 @@ cache_duration = int(os.getenv('CACHE_DURATION_SECONDS', 23 * 60 * 60))
 
 
 @app.route('/', methods=['GET'])
- return jsonify(**{'AK test'})
 def ad_detail():
     finnkode = request.args.get('finnkode')
     if not finnkode or not finnkode.isdigit():
